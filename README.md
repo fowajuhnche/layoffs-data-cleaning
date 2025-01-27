@@ -1,19 +1,31 @@
 # layoffs-data-cleaning
 SQL project for cleaning and standardizing layoffs data
 
-🚀 Just wrapped up my first SQL data cleaning project! 🚀
-Here’s what I did:
- 1️⃣ Removed duplicates – Used ROW_NUMBER() to spot and clean duplicate entries.
- 2️⃣ Standardized data – Cleaned up inconsistencies in company names, industries, and dates using functions like TRIM(), STR_TO_DATE(), and UPDATE.
- 3️⃣ Handled missing values – Replaced blanks with NULLs and filled in missing details using JOIN operations.
- 4️⃣ Tidied up the dataset – Removed extra columns that were no longer needed after cleaning.
-Key SQL techniques I used:
-ROW_NUMBER() to identify duplicates
-JOIN to fill missing data
-UPDATE for data standardization
-DELETE to clean up unnecessary records
+ Data Cleaning Project
+This project was my first deep dive into the data cleaning process, where I transformed raw, unstructured data into a clean, organized dataset ready for analysis. The goal was to prepare the layoffs dataset for meaningful insights by addressing inconsistencies, redundancies, and inaccuracies.
 
+Key Objectives:
+Ensure data accuracy and consistency across all fields.
+Handle missing or null values while maintaining data integrity.
+Standardize formats for dates, text, and numerical values.
+Identify and resolve any duplicates or anomalies.
+Steps Taken:
+Data Preprocessing:
 
+Standardized date formats to allow for chronological analysis.
+Checked for null values in critical columns like total_laid_off and replaced them with appropriate defaults or interpolated values.
+Handling Duplicates:
+
+Identified duplicate records within the dataset and removed redundancies to ensure unique and reliable data entries.
+Standardizing Values:
+
+Cleaned inconsistent text data for company, industry, and country fields to ensure uniformity (e.g., correcting misspellings or inconsistent capitalization).
+Anomaly Detection:
+
+Used SQL queries to identify outliers in numerical fields such as total_laid_off and percentage_laid_off that could skew results.
+
+ 
+ 
  Exploratory Data Analysis (EDA)  
 
 The EDA phase of this project was focused on uncovering key trends and patterns in the layoffs dataset. By using SQL queries, I was able to clean, organize, and analyze the data to derive actionable insights. Below is a summary of the steps and queries used during the analysis:  
